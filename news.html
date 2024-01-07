@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News - AI Club</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+
+        .header, .footer {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .nav-bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .nav-bar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .nav-bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: white;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .news-article {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        .news-article:last-child {
+            border: none;
+        }
+
+        .news-title {
+            font-size: 20px;
+            color: #004d99;
+        }
+
+        .news-date {
+            font-style: italic;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .news-content {
+            text-align: justify;
+        }
+
+        @media screen and (max-width: 600px) {
+            .nav-bar a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>AI Club News</h1>
+</div>
+
+<div class="nav-bar">
+    <a href="home.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+</div>
+
+<div class="content">
+    <div class="news-article">
+        <h2 class="news-title">AI Club Wins Regional Competition</h2>
+        <p class="news-date">January 15, 2024</p>
+        <div class="news-content">
+            <p>We are thrilled to announce that our AI Club team won the first place in the Regional AI Challenge this year. Congratulations to all team members!</p>
+        </div>
+    </div>
+
+    <div class="news-article">
+        <h2 class="news-title">Upcoming Workshop on Machine Learning</h2>
+        <p class="news-date">February 10, 2024</p>
+        <div class="news-content">
+            <p>Join us for an exciting workshop on Machine Learning basics and applications, scheduled for March 5th. It's a great opportunity for beginners to get started!</p>
+        </div>
+    </div>
+
+    <!-- Add more news articles here -->
+
+</div>
+
+<div class="footer">
+    <p>Copyright &copy; 2023 AI Club</p>
+</div>
+
+</body>
+</html>
