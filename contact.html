@@ -92,6 +92,11 @@
             }
         }
     </style>
+    
+    <!--  AI CHATBOX SCRIPTS: START -->
+    <link rel="stylesheet" href="chatbot_style.css">
+    <!--  AI CHATBOX SCRIPTS: END -->
+    
 </head>
 <body>
 
@@ -123,6 +128,36 @@
         <input type="submit" value="Submit">
     </form>
 </div>
+
+<!--  AI CHATBOX SCRIPTS: START -->
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="images/pghs-logo.png" alt="PGHS">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">AI Club Assistant</h4>
+                    <p class="chatbox__description--header">Hello. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="images/chatbox-icon.svg" /></button>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="chatbot_app.js"></script>
+<!--  AI CHATBOX SCRIPTS: END -->
 
 <div class="footer">
     <p>Copyright &copy; AI Club</p>

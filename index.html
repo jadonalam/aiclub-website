@@ -62,8 +62,10 @@
             background-color: #004d99;
             color: white;
             text-align: center;
-            padding: 20px 0;
-            position: relative;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
 
         /* Additional styles for professional look */
@@ -97,6 +99,12 @@
             }
         }
     </style>
+    
+    
+    <!--  AI CHATBOX SCRIPTS: START -->
+    <link rel="stylesheet" href="chatbot_style.css">
+    <!--  AI CHATBOX SCRIPTS: END -->
+    
 </head>
 <body>
 
@@ -110,6 +118,7 @@
     <a href="contact.html">Contact</a>
     <a href="about.html">About</a>
 </div>
+    
 
 <div class="content">
     <h2>Who We Are</h2>
@@ -140,22 +149,41 @@
     </div>
 </div>
 
+<!--  AI CHATBOX SCRIPTS: START -->
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="images/pghs-logo.png" alt="PGHS">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">AI Club Assistant</h4>
+                    <p class="chatbox__description--header">Hello. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="images/chatbox-icon.svg" /></button>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="chatbot_app.js"></script>
+<!--  AI CHATBOX SCRIPTS: END -->
+
 <div class="footer">
     <p>Copyright &copy; 2023 AI Club</p>
 </div>
 
-<script type="text/javascript">
-    (function(d, t) {
-        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-        v.onload = function() {
-          window.voiceflow.chat.load({
-            verify: { projectID: '6591f6e766a6d9fafd7a0ebf' },
-            url: 'https://general-runtime.voiceflow.com',
-            versionID: 'production'
-          });
-        }
-        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-    })(document, 'script');
-  </script>
+
+    
 </body>
 </html>
